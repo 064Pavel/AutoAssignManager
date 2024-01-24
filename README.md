@@ -29,8 +29,17 @@
 {
     "data": [
         {
-
+            "model":"BMW 3 Series",
+            "comfort_category": {
+                "comfort_category":"Comfort"
+                },
+            "driver": {
+                "driver_name":"Jakayla Crooks",
+                "phone":"734-474-1163"
             }
+            },
+            ...
+        }
     ]
 }
 
