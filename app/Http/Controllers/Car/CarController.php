@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Car;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\CarResource;
 use App\Models\Car;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -40,7 +41,7 @@ class CarController extends Controller
 
         $result = $carsNotInTrips->get();
 
-        dd($result);
+        return CarResource::collection($result);
     }
 
 

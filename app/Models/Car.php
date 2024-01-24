@@ -11,6 +11,14 @@ class Car extends Model
 {
     use HasFactory;
 
+    public function driver(): BelongsTo
+    {
+        return $this->belongsTo(Driver::class);
+    }
+    public function comfort_category(): BelongsTo
+    {
+        return $this->belongsTo(ComfortCategories::class);
+    }
     public function trips(): HasMany
     {
         return $this->hasMany(Trip::class);
